@@ -1,9 +1,14 @@
-# Add all changes (including new files)
+# Stage all changes
 git add .
 
-# Commit with current date & time
-$now = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-git commit -m "$now"
+# Get a list of changed files
+$changes = git status --porcelain | ForEach-Object { $_.Substring(3) }
 
-# Push to main branch
-git push origin main
+# If there are changes, commit them
+if ($changes) {
+    $message = "Updated: " + ($changes -join ", ")
+    git commit -m "$message"
+    git push origin main
+} else {
+    Write-Output "No changes to commit."
+}
