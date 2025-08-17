@@ -12,7 +12,7 @@ void printarr(int arr[],int n){
 }
 
 int main(){
-    int arr[] = {0,1,0,3,12,5,0,2};
+    int arr[] = {0,1,2,0,1,2,1,2,0,0,0,1};
     int n = sizeof(arr)/ sizeof(arr[0]);
     // Two ptrs int i and int j
     int i =0;

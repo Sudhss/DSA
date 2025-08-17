@@ -1,4 +1,6 @@
+// kadane Algo
 #include <stdio.h>
+
 
 int main()
 {
