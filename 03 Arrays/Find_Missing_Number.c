@@ -57,7 +57,7 @@
 
 
 
-// optimal one
+// real juicer
 // O(n) time <-> O(1) space
 #include <stdio.h>
 
