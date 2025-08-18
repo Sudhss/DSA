@@ -4,7 +4,7 @@ git add .
 # Check if there are changes
 $changes = git status --porcelain
 if ($changes) {
-    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $timestamp = Get-Date -Format "yyyy-MM-dd / HH:mm:ss"
     git commit -m "$timestamp"
     git push origin main
 } else {
