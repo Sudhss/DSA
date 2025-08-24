@@ -12,8 +12,3 @@ int main(){
     printf("%d",n1);
     return 0;
 }
-
-
-// Ye hua ratta maarna -> 
-
-// TCO -> 
