@@ -11,6 +11,7 @@ int main()
     int n = sizeof(arr)/sizeof(arr[0]);
     int max = INT_MIN;
     int sum = 0;
+
     for (int i = 0;i<n;i++){
         sum+=arr[i];
         max = maxx(max,sum);
